@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Roboto:wght@700&family=Water+Brush&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Roboto:wght@700&family=Tapestry&family=Water+Brush&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Orbitron:wght@600&family=Roboto:wght@700&family=Tapestry&family=Water+Brush&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Weather</title>
+</head>
+
+<body id="body" onload="onload()">
+    <div id="main">
+        <div id="left">
+            <div id="heading">Weather &MediumSpace; Forecast</div>
+            <div id="weatherUpdate">
+                <div id="weatherImg"><img src="" alt="image" id="weatherImage" width="50rem" height="50rem" style="filter: brightness(200%);"></div>
+                <div id="tempDate">
+                    <div id="weather" class="font"></div>
+                    <div id="temp"></div>
+                    <div id="feels" class="font"></div>
+                </div>
+                <div id="date" class="font"></div>
+            </div>
+            <div id="biddingTime">
+                <div id="bid"></div>
+                <div id="welcome"></div>
+                <div id="time"></div>
+            </div>
+        </div>
+        <div id="right">
+            <span><img src="weatherIcon.png" alt="icon.png" id="iconImg"></span>
+            <input list="listTimezone" name="timezone" id="getTimezone" placeholder="Select Timezone">
+            <datalist id="listTimezone"></datalist>
+            <img src="search.png" alt="search" width="30rem" height="30rem" id="searchImg" onclick="api()">
+            <div id="flex">
+                <div class="data" id="sunriseData"></div>
+                <div class="data" id="sunsetData"></div>
+                <div class="data" id="tempData"></div>
+                <div class="data" id="humidityData"></div>
+                <div class="data" id="windData"></div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">Created by sayantanb</footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
